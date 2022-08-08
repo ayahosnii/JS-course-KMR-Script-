@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>74- Strict Mode</title>
+</head>
+<body>
+<center>
+    <h2 style="color: darkblue ">74- Strict Mode Vs Sloppy mode</h2>
+    <div id="content"></div>
+</center>
+<script>
+    let content = document.getElementById('content')
+    //'use strict'
+
+    x = 5
+    console.log(x)
+    function f(y,y) {
+        console.log(y)
+    }
+    f(5,6)
+
+    function a(b,c) {
+        console.log(c)
+    }
+    a(1,2)
+
+
+    function F(){
+        this.x = 5
+    }
+
+    let o = new F
+    console.log(o.x)
+
+    content.innerHTML += ` <h3 style="color: chocolate">without 'use strict'  (Sloppy mode)</h3>
+                           <p>x=5</p>
+                           <p>console.log(x)  => ${ x}</p>
+                           <h3 style="color: chocolate">with 'use strict' (Strict mode)</h3>
+                           <p>console.log(x) => Uncaught ReferenceError: x is not defined</p>
+
+                           <h3 style="color: chocolate">without 'use strict'  (Sloppy mode)</h3>
+                           <p>function f(x,x){console.log(x)}</p>
+                           <p>f(5,6)  -- it will take the second number => ${ f(5,6)}</p>
+                           <p>a(1,2) => ${a(1,2)}</p>
+                           <p> ${a} => ${a(2,3)}</p>
+`
+
+</script>
+</body>
+</html>

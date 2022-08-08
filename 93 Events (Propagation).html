@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>93- Events (Propagation)</title>
+</head>
+<body>
+<div style="background: coral; padding: 20px" class="">
+  <button>hello</button>
+</div>
+
+<script>
+  let div = document.querySelector('div')
+  let btn = document.querySelector('button')
+
+  div.onclick = function (e) {
+      console.log(e.target)
+  }
+
+  btn.onclick = function (e){
+      console.log('btn hello')
+  }
+</script>
+</body>
+</html>

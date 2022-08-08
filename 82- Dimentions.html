@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>80</title>
+    <style>
+        .myDivClass{
+            background: #f5b9a6;
+            padding: 10px;
+            font-size: 30px;
+            height: 100px;
+            overflow: auto;
+            width: 50%;
+            display: flex;
+            align-content: center;
+            position: absolute;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="myDivId" class="myDivClass">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab alias aliquam aut, corporis delectus ea eveniet magni maxime mollitia
+        officiis perferendis placeat praesentium quasi quo ratione reiciendis tenetur vel voluptate.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab alias aliquam aut, corporis delectus ea eveniet magni maxime mollitia
+        officiis perferendis placeat praesentium quasi quo ratione reiciendis tenetur vel voluptate.</p>
+</div>
+<script>
+    let e = document.getElementById('myDivId')
+console.log(e.clientHeight + ' = e.clientHeight')
+console.log(e.clientWidth +' = e.clientWidth')
+console.log(e.scrollHeight + ' = e.scrollHeight')
+console.log(e.offsetHeight+ ' = e.offsetHeight')
+console.log(e.offsetWidth + ' = e.offsetWidth')
+console.log(e.clientTop + ' = e.clientTop')
+console.log(e.clientTop + ' = e.clientTop')
+console.log(e.offsetTop + ' = e.offsetTop') // All The Page
+
+</script>
+</body>
+</html>

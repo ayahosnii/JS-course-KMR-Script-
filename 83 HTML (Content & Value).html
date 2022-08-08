@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>80</title>
+    <style>
+        *{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="myDivId" class="myDivClass">
+    Hello <span>DOM</span>
+</div><br>
+<input type="text" class="text"><br><br>
+<input type="radio" class="radio" value="hello" checked> Radio Check
+<script>
+    let div = document.getElementById('myDivId')
+     input = document.querySelector('.text')
+     radio = document.querySelector('.radio')
+console.log(div.innerHTML)
+console.log(div.innerText)
+console.log(div.textContent)
+console.log(input.value)
+console.log(radio.value)
+console.log(radio.checked)
+
+</script>
+</body>
+</html>
