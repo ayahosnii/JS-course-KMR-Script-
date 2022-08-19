@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>88- Navigation </title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+    <p>
+        <span>hello</span>
+        <a>goodbye</a>
+    </p>
+</div>
+<!--'beforeend'-->
+
+<script>
+   //let p = document.getElementsByTagName("p")[0]
+    let p = document.querySelector('p')
+    let div = document.querySelector('div')
+    //let span = document.querySelector('span')
+
+    console.log(p)
+   console.log(p.remove())
+   div.removeChild(div.firstElementChild)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>84</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="hello"></div>
+
+<script>
+    let div = document.querySelector('div')
+    let newDiv = div.cloneNode(true)
+    console.log(div)
+    let p = document.createElement('p')
+    console.log(p)
+    let t = document.createTextNode('Hello From P')
+    console.log(t)
+    let c = document.createComment('hello comment')
+    console.log(c)
+    let a = document.createAttribute('id')
+    a.value = 'myP'
+    p.setAttributeNode(a)
+    console.log(a)
+    p.setAttribute('id', 'myP')
+
+</script>
+</body>
+</html>

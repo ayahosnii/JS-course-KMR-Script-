@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>84</title>
+    <style>
+        *{
+            font-size: 30px;
+        }
+        .blue{
+            background-color: darkblue;
+            width: 25%;
+            height: 300px;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="blue red">
+    hi
+</div>
+<script>
+    let div = document.querySelector('div')
+
+console.log(div)
+console.log(div.classList)
+console.log(div.classList.add('new-class'))
+console.log(div.classList)
+console.log(div.classList.remove('new-class'))
+console.log(div.classList.toggle('blue'))
+console.log(div.classList.toggle('blue'))
+console.log(div.classList.contains('blue'))
+console.log(div.classList.replace('blue', 'b'))
+console.log(div.classList.replace('b', 'blue'))
+console.log(div.classList.length)
+
+
+
+
+</script>
+</body>
+</html>

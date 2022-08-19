@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>88- Navigation </title>
+    <style>
+
+    </style>
+</head>
+<body>
+<p>
+    <span>hello</span>
+    <a>goodbye</a>
+</p>
+<!--'beforeend'-->
+
+<script>
+    let p = document.getElementsByTagName("p")[0]
+    //let p = document.querySelector('span')
+    let span = document.querySelector('span')
+
+    console.log(p.childNodes)
+    console.log(p.children)
+    console.log(p.firstChild)
+    console.log(p.lastChild)
+    console.log(p.firstElementChild)
+    console.log(p.lastElementChild)
+    console.log(p.childElementCount)
+    console.log(p.parentNode)
+    console.log(p.parentElement)
+
+    console.log(span.parentNode)
+    console.log(span.parentElement)
+
+    console.log(p.nextSibling)
+    console.log(p.nextElementSibling)
+    console.log(p.previousSibling)
+    console.log(p.previousElementSibling)
+</script>
+</body>
+</html>

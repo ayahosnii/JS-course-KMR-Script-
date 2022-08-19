@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>87- Add new Nodes</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--'beforebegin'-->
+<div id="hello">
+    <!--'afterbegin'-->
+    <p id="p"></p>
+</div>
+<!--'beforeend'-->
+
+<script>
+    let div = document.querySelector('div')
+    let p = document.createElement('p')
+    p.textContent = 'hello from p'
+    /*let p2 = document.createElement('p')
+    p2.textContent = 'hello from p 2'
+    div.append(p, p2)
+    div.insertBefore(p, document.getElementById('p'))*/
+    div.insertAdjacentElement('beforeend', p)
+</script>
+</body>
+</html>
